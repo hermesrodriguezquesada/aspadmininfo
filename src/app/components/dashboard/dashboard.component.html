@@ -1,0 +1,166 @@
+<div class="row">
+
+    <div class="col-12 col-sm-6 col-md-3">
+      <div class="info-box mb-3">
+        <span class="info-box-icon bg-info elevation-1"><i class="fas fa-graduation-cap"></i></span>
+  
+        <div class="info-box-content">
+          <span class="info-box-text">Carreras</span>
+          <span class="info-box-number">{{ dashboardData.totalCareer }}</span>
+          <span class="info-box-number">&nbsp; </span>
+          <span class="text-right">
+                <a [routerLink]="['/site/career_list']" class="small-box-footer">Ver más <i class="fas fa-arrow-circle-right"></i></a>
+            </span>
+        </div>
+        <!-- /.info-box-content -->
+      </div>
+      <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+  
+    <div class="col-12 col-sm-6 col-md-3">
+      <div class="info-box mb-3">
+        <span class="info-box-icon bg-success elevation-1"><i class="fas fa-graduation-cap"></i></span>
+  
+        <div class="info-box-content">
+          <span class="info-box-text">Carreras</span>
+          <span class="info-box-text">configuradas</span>
+          <span class="info-box-number"> {{ dashboardData.percentCareerConfig }} <small>%</small> </span>
+          <span class="text-right">
+                  <a [routerLink]="['/site/career_list']" [queryParams]="{ active: 'true'}" class="small-box-footer">Ver más <i class="fas fa-arrow-circle-right"></i></a>
+            </span>
+        </div>
+        <!-- /.info-box-content -->
+      </div>
+      <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+  
+    <!-- fix for small devices only -->
+    <div class="clearfix hidden-md-up"></div>
+  
+    <div class="col-12 col-sm-6 col-md-3">
+      <div class="info-box mb-3">
+        <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-graduation-cap"></i></span>
+  
+        <div class="info-box-content">
+          <span class="info-box-text">Carreras</span>
+          <span class="info-box-text">no configuradas</span>
+          <span class="info-box-number"> {{ dashboardData.percentCareerNotConfig }} <small>%</small></span>
+          <span class="text-right">
+                  <a [routerLink]="['/site/career_list']" [queryParams]="{ active: 'false'}" class="small-box-footer">Ver más <i class="fas fa-arrow-circle-right"></i></a>
+            </span>
+        </div>
+        <!-- /.info-box-content -->
+      </div>
+      <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+  
+    <div class="col-12 col-sm-6 col-md-3">
+      <div class="info-box mb-3">
+        <span class="info-box-icon bg-info elevation-1"><i class="fas fa-file-alt"></i></span>
+  
+        <div class="info-box-content">
+          <span class="info-box-text">Artículos</span>
+          <span class="info-box-number">{{ dashboardData.totalNews }}</span>
+          <span class="info-box-number">&nbsp; </span>
+          <span class="text-right">
+                <a [routerLink]="['/site/news_list']" class="small-box-footer">Ver más <i class="fas fa-arrow-circle-right"></i></a>
+            </span>
+        </div>
+        <!-- /.info-box-content -->
+      </div>
+      <!-- /.info-box -->
+    </div>
+    <!-- /.col -->
+  
+  </div>
+  
+  
+  <!-- Info boxes -->
+  <div class="row">
+  
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="info-box">
+          <span class="info-box-icon bg-info elevation-1"><i class="fas fa-university"></i></span>
+  
+          <div class="info-box-content">
+            <span class="info-box-text">Universidades</span>
+            <span class="info-box-number"> {{ dashboardData.totalEducationCenter }} </span>
+            <span class="info-box-number">&nbsp; </span>
+            <span class="text-right">
+                <a [routerLink]="['/site/ces_list']" class="small-box-footer">Ver más <i class="fas fa-arrow-circle-right"></i></a>
+            </span>
+  
+          </div>
+          <!-- /.info-box-content -->
+  
+        </div>
+        <!-- /.info-box -->
+      </div>
+      <!-- /.col -->
+  
+      <!-- /.col -->
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="info-box">
+          <span class="info-box-icon bg-success elevation-1"><i class="fas fa-university"></i></span>
+  
+          <div class="info-box-content">
+            <span class="info-box-text">Universidades</span>
+            <span class="info-box-text">configuradas</span>
+            <span class="info-box-number"> {{ dashboardData.percentEducationCenterConfig }} <small>%</small></span>
+            <span class="text-right">
+                  <a [routerLink]="['/site/ces_list']"  [queryParams]="{ active: 'true'}"class="small-box-footer">Ver más <i class="fas fa-arrow-circle-right"></i></a>
+            </span>
+          </div>
+          <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+      </div>
+      <!-- /.col -->
+  
+      <!-- fix for small devices only -->
+      <div class="clearfix hidden-md-up"></div>
+  
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="info-box mb-3">
+          <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-university"></i></span>
+  
+          <div class="info-box-content">
+            <span class="info-box-text">Universidades</span>
+            <span class="info-box-text">no configuradas</span>
+            <span class="info-box-number"> {{ dashboardData.percentEducationCenterNotConfig }} <small>%</small></span>
+            <span class="text-right">
+                  <a [routerLink]="['/site/ces_list']" [queryParams]="{ active: 'false'}" class="small-box-footer">Ver más <i class="fas fa-arrow-circle-right"></i></a>
+            </span>
+          </div>
+          <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+      </div>
+      <!-- /.col -->
+  
+      <div class="col-12 col-sm-6 col-md-3">
+        <div class="info-box mb-3">
+          <span class="info-box-icon bg-info elevation-1"><i class="fas fa-users"></i></span>
+  
+          <div class="info-box-content">
+            <span class="info-box-text">Usuarios</span>
+            <span class="info-box-number">{{ dashboardData.totalUser }}</span>
+            <span class="info-box-number">&nbsp; </span>
+            <span class="text-right">
+                <a [routerLink]="['/site/user_list']" class="small-box-footer">Ver más <i class="fas fa-arrow-circle-right"></i></a>
+            </span>
+          </div>
+          <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+      </div>
+      <!-- /.col -->
+  
+  </div>
+  <!-- /.row -->
+  
+  
+
